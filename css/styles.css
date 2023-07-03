@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #00ADB5;
+  --text-color: #eee;
+  --background-color: #222831;
+  --big-font: 3.4em;
+  --h2-font: 2rem;
+  --p-font: 0.9rem;
+  --first-page: red;
+}
+
+*::-moz-selection {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+*::selection {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 15px 170px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.navbar a:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar a.active {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  padding: 70px 11% 0 11%;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.home-img {
+  max-width: 100%;
+  width: 200px;
+  height: 460px;
+  margin-left: 110px;
+  z-index: 10;
+}
+
+.home-text {
+  padding-top: 100px;
+}
+
+.home-text h1 {
+  font-size: var(--big-font);
+  color: var(--main-color);
+}
+
+.home-text h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.7;
+  text-shadow: 2px 2px 2px black;
+  margin: 1rem 0 2rem;
+}
+
+.home-text h3 {
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #437482;
+  transition: 0.4s;
+}/*# sourceMappingURL=anime.css.map */
